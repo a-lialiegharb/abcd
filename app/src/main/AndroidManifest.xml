@@ -13,6 +13,7 @@
         </activity>
         <activity android:name=".TopicDetailActivity" />
         <activity android:name=".QuizActivity" />
+        <activity android:name=".CodeEditorActivity" />
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TopicAdapter topicAdapter;
     private List<Topic> topics;
     private Button startQuiz;
+    private Button codeEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         topicList = findViewById(R.id.topic_list);
         startQuiz = findViewById(R.id.start_quiz);
+        codeEditor = findViewById(R.id.code_editor);
         topicList.setLayoutManager(new LinearLayoutManager(this));
 
         topics = new ArrayList<>();
@@ -42,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
         startQuiz.setOnClickListener(v -> {
             Intent intent = new Intent(this, QuizActivity.class);
+            startActivity(intent);
+        });
+
+        codeEditor.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CodeEditorActivity.class);
             startActivity(intent);
         });
     }
