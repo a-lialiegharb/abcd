@@ -14,7 +14,14 @@
         android:id="@+id/start_quiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/code_editor"
         android:text="Start Quiz" />
+
+    <Button
+        android:id="@+id/code_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Code Editor" />
 
 </RelativeLayout>
